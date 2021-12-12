@@ -1,0 +1,812 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		181214A6BD2B544C9D98808A /* Pods_mocosocial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 640D134FE78AFDC204716A15 /* Pods_mocosocial.framework */; };
+		2C6DFDC427605006006FA15B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6DFDC327605006006FA15B /* AppDelegate.swift */; };
+		2C6DFDC627605006006FA15B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6DFDC527605006006FA15B /* SceneDelegate.swift */; };
+		2C6DFDC827605006006FA15B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6DFDC727605006006FA15B /* ViewController.swift */; };
+		2C6DFDCB27605006006FA15B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C6DFDC927605006006FA15B /* Main.storyboard */; };
+		2C6DFDCE27605006006FA15B /* mocosocial.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2C6DFDCC27605006006FA15B /* mocosocial.xcdatamodeld */; };
+		2C6DFDD027605008006FA15B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C6DFDCF27605008006FA15B /* Assets.xcassets */; };
+		2C6DFDD327605008006FA15B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C6DFDD127605008006FA15B /* LaunchScreen.storyboard */; };
+		2C6DFDDE27605008006FA15B /* mocosocialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6DFDDD27605008006FA15B /* mocosocialTests.swift */; };
+		2C6DFDE827605008006FA15B /* mocosocialUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6DFDE727605008006FA15B /* mocosocialUITests.swift */; };
+		2C6DFDEA27605008006FA15B /* mocosocialUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6DFDE927605008006FA15B /* mocosocialUITestsLaunchTests.swift */; };
+		2C6DFDF72760578B006FA15B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2C6DFDF62760578B006FA15B /* GoogleService-Info.plist */; };
+		2C6DFDFD2762B6A5006FA15B /* UsuarioVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6DFDFC2762B6A5006FA15B /* UsuarioVC.swift */; };
+		2C8C1EC22765C7D600CD0A80 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8C1EC12765C7D600CD0A80 /* Feed.swift */; };
+		AFD2BA78296E3996C0D80CCB /* Pods_mocosocialTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E407CBB62B30089DAB178CCA /* Pods_mocosocialTests.framework */; };
+		C7B364BDF3061E2BE10DB72D /* Pods_mocosocial_mocosocialUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1851FC1440A139B0BBE8678 /* Pods_mocosocial_mocosocialUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2C6DFDDA27605008006FA15B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C6DFDB827605005006FA15B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C6DFDBF27605006006FA15B;
+			remoteInfo = mocosocial;
+		};
+		2C6DFDE427605008006FA15B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C6DFDB827605005006FA15B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C6DFDBF27605006006FA15B;
+			remoteInfo = mocosocial;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0F9E97FDC7A2D2D77F4782B0 /* Pods-mocosocialTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mocosocialTests.release.xcconfig"; path = "Target Support Files/Pods-mocosocialTests/Pods-mocosocialTests.release.xcconfig"; sourceTree = "<group>"; };
+		2C6DFDC027605006006FA15B /* mocosocial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mocosocial.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C6DFDC327605006006FA15B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2C6DFDC527605006006FA15B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2C6DFDC727605006006FA15B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2C6DFDCA27605006006FA15B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2C6DFDCD27605006006FA15B /* mocosocial.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = mocosocial.xcdatamodel; sourceTree = "<group>"; };
+		2C6DFDCF27605008006FA15B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2C6DFDD227605008006FA15B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2C6DFDD427605008006FA15B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C6DFDD927605008006FA15B /* mocosocialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mocosocialTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C6DFDDD27605008006FA15B /* mocosocialTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mocosocialTests.swift; sourceTree = "<group>"; };
+		2C6DFDE327605008006FA15B /* mocosocialUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mocosocialUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C6DFDE727605008006FA15B /* mocosocialUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mocosocialUITests.swift; sourceTree = "<group>"; };
+		2C6DFDE927605008006FA15B /* mocosocialUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mocosocialUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2C6DFDF62760578B006FA15B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2C6DFDFC2762B6A5006FA15B /* UsuarioVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsuarioVC.swift; sourceTree = "<group>"; };
+		2C8C1EC12765C7D600CD0A80 /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
+		640D134FE78AFDC204716A15 /* Pods_mocosocial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mocosocial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		904F46431D1C239A6C437981 /* Pods-mocosocial-mocosocialUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mocosocial-mocosocialUITests.debug.xcconfig"; path = "Target Support Files/Pods-mocosocial-mocosocialUITests/Pods-mocosocial-mocosocialUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		96384186BB46CFC65B4794A9 /* Pods-mocosocialTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mocosocialTests.debug.xcconfig"; path = "Target Support Files/Pods-mocosocialTests/Pods-mocosocialTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A30BED60C41C0C185872C84F /* Pods-mocosocial-mocosocialUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mocosocial-mocosocialUITests.release.xcconfig"; path = "Target Support Files/Pods-mocosocial-mocosocialUITests/Pods-mocosocial-mocosocialUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B73D70A2BB8269FEDD2E71D3 /* Pods-mocosocial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mocosocial.debug.xcconfig"; path = "Target Support Files/Pods-mocosocial/Pods-mocosocial.debug.xcconfig"; sourceTree = "<group>"; };
+		C1851FC1440A139B0BBE8678 /* Pods_mocosocial_mocosocialUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mocosocial_mocosocialUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E407CBB62B30089DAB178CCA /* Pods_mocosocialTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mocosocialTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2E6A080629B232D319439C8 /* Pods-mocosocial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mocosocial.release.xcconfig"; path = "Target Support Files/Pods-mocosocial/Pods-mocosocial.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2C6DFDBD27605006006FA15B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				181214A6BD2B544C9D98808A /* Pods_mocosocial.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C6DFDD627605008006FA15B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFD2BA78296E3996C0D80CCB /* Pods_mocosocialTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C6DFDE027605008006FA15B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7B364BDF3061E2BE10DB72D /* Pods_mocosocial_mocosocialUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2A20024A87DB67396571555C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				640D134FE78AFDC204716A15 /* Pods_mocosocial.framework */,
+				C1851FC1440A139B0BBE8678 /* Pods_mocosocial_mocosocialUITests.framework */,
+				E407CBB62B30089DAB178CCA /* Pods_mocosocialTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2C6DFDB727605005006FA15B = {
+			isa = PBXGroup;
+			children = (
+				2C6DFDC227605006006FA15B /* mocosocial */,
+				2C6DFDDC27605008006FA15B /* mocosocialTests */,
+				2C6DFDE627605008006FA15B /* mocosocialUITests */,
+				2C6DFDC127605006006FA15B /* Products */,
+				9E90CF09C9C18E998D89976F /* Pods */,
+				2A20024A87DB67396571555C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2C6DFDC127605006006FA15B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2C6DFDC027605006006FA15B /* mocosocial.app */,
+				2C6DFDD927605008006FA15B /* mocosocialTests.xctest */,
+				2C6DFDE327605008006FA15B /* mocosocialUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2C6DFDC227605006006FA15B /* mocosocial */ = {
+			isa = PBXGroup;
+			children = (
+				2C6DFDC327605006006FA15B /* AppDelegate.swift */,
+				2C6DFDC527605006006FA15B /* SceneDelegate.swift */,
+				2C6DFDC727605006006FA15B /* ViewController.swift */,
+				2C6DFDC927605006006FA15B /* Main.storyboard */,
+				2C8C1EC12765C7D600CD0A80 /* Feed.swift */,
+				2C6DFDCF27605008006FA15B /* Assets.xcassets */,
+				2C6DFDD127605008006FA15B /* LaunchScreen.storyboard */,
+				2C6DFDD427605008006FA15B /* Info.plist */,
+				2C6DFDCC27605006006FA15B /* mocosocial.xcdatamodeld */,
+				2C6DFDF62760578B006FA15B /* GoogleService-Info.plist */,
+				2C6DFDFC2762B6A5006FA15B /* UsuarioVC.swift */,
+			);
+			path = mocosocial;
+			sourceTree = "<group>";
+		};
+		2C6DFDDC27605008006FA15B /* mocosocialTests */ = {
+			isa = PBXGroup;
+			children = (
+				2C6DFDDD27605008006FA15B /* mocosocialTests.swift */,
+			);
+			path = mocosocialTests;
+			sourceTree = "<group>";
+		};
+		2C6DFDE627605008006FA15B /* mocosocialUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2C6DFDE727605008006FA15B /* mocosocialUITests.swift */,
+				2C6DFDE927605008006FA15B /* mocosocialUITestsLaunchTests.swift */,
+			);
+			path = mocosocialUITests;
+			sourceTree = "<group>";
+		};
+		9E90CF09C9C18E998D89976F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B73D70A2BB8269FEDD2E71D3 /* Pods-mocosocial.debug.xcconfig */,
+				F2E6A080629B232D319439C8 /* Pods-mocosocial.release.xcconfig */,
+				904F46431D1C239A6C437981 /* Pods-mocosocial-mocosocialUITests.debug.xcconfig */,
+				A30BED60C41C0C185872C84F /* Pods-mocosocial-mocosocialUITests.release.xcconfig */,
+				96384186BB46CFC65B4794A9 /* Pods-mocosocialTests.debug.xcconfig */,
+				0F9E97FDC7A2D2D77F4782B0 /* Pods-mocosocialTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2C6DFDBF27605006006FA15B /* mocosocial */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C6DFDED27605008006FA15B /* Build configuration list for PBXNativeTarget "mocosocial" */;
+			buildPhases = (
+				455422F6BAA02A60393F419F /* [CP] Check Pods Manifest.lock */,
+				2C6DFDBC27605006006FA15B /* Sources */,
+				2C6DFDBD27605006006FA15B /* Frameworks */,
+				2C6DFDBE27605006006FA15B /* Resources */,
+				8A931B9358A9F5E94DA9DC8B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = mocosocial;
+			productName = mocosocial;
+			productReference = 2C6DFDC027605006006FA15B /* mocosocial.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2C6DFDD827605008006FA15B /* mocosocialTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C6DFDF027605008006FA15B /* Build configuration list for PBXNativeTarget "mocosocialTests" */;
+			buildPhases = (
+				F12348E4763317563E1D6D4B /* [CP] Check Pods Manifest.lock */,
+				2C6DFDD527605008006FA15B /* Sources */,
+				2C6DFDD627605008006FA15B /* Frameworks */,
+				2C6DFDD727605008006FA15B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2C6DFDDB27605008006FA15B /* PBXTargetDependency */,
+			);
+			name = mocosocialTests;
+			productName = mocosocialTests;
+			productReference = 2C6DFDD927605008006FA15B /* mocosocialTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2C6DFDE227605008006FA15B /* mocosocialUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C6DFDF327605008006FA15B /* Build configuration list for PBXNativeTarget "mocosocialUITests" */;
+			buildPhases = (
+				5CCFE6FF3B6A2C6E9363C983 /* [CP] Check Pods Manifest.lock */,
+				2C6DFDDF27605008006FA15B /* Sources */,
+				2C6DFDE027605008006FA15B /* Frameworks */,
+				2C6DFDE127605008006FA15B /* Resources */,
+				CFA339814F2C4EFD4F419716 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2C6DFDE527605008006FA15B /* PBXTargetDependency */,
+			);
+			name = mocosocialUITests;
+			productName = mocosocialUITests;
+			productReference = 2C6DFDE327605008006FA15B /* mocosocialUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2C6DFDB827605005006FA15B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					2C6DFDBF27605006006FA15B = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					2C6DFDD827605008006FA15B = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 2C6DFDBF27605006006FA15B;
+					};
+					2C6DFDE227605008006FA15B = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 2C6DFDBF27605006006FA15B;
+					};
+				};
+			};
+			buildConfigurationList = 2C6DFDBB27605005006FA15B /* Build configuration list for PBXProject "mocosocial" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2C6DFDB727605005006FA15B;
+			productRefGroup = 2C6DFDC127605006006FA15B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2C6DFDBF27605006006FA15B /* mocosocial */,
+				2C6DFDD827605008006FA15B /* mocosocialTests */,
+				2C6DFDE227605008006FA15B /* mocosocialUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2C6DFDBE27605006006FA15B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C6DFDD327605008006FA15B /* LaunchScreen.storyboard in Resources */,
+				2C6DFDF72760578B006FA15B /* GoogleService-Info.plist in Resources */,
+				2C6DFDD027605008006FA15B /* Assets.xcassets in Resources */,
+				2C6DFDCB27605006006FA15B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C6DFDD727605008006FA15B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C6DFDE127605008006FA15B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		455422F6BAA02A60393F419F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mocosocial-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5CCFE6FF3B6A2C6E9363C983 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mocosocial-mocosocialUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A931B9358A9F5E94DA9DC8B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mocosocial/Pods-mocosocial-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mocosocial/Pods-mocosocial-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-mocosocial/Pods-mocosocial-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CFA339814F2C4EFD4F419716 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mocosocial-mocosocialUITests/Pods-mocosocial-mocosocialUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mocosocial-mocosocialUITests/Pods-mocosocial-mocosocialUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-mocosocial-mocosocialUITests/Pods-mocosocial-mocosocialUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F12348E4763317563E1D6D4B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mocosocialTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2C6DFDBC27605006006FA15B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C6DFDCE27605006006FA15B /* mocosocial.xcdatamodeld in Sources */,
+				2C8C1EC22765C7D600CD0A80 /* Feed.swift in Sources */,
+				2C6DFDC827605006006FA15B /* ViewController.swift in Sources */,
+				2C6DFDFD2762B6A5006FA15B /* UsuarioVC.swift in Sources */,
+				2C6DFDC427605006006FA15B /* AppDelegate.swift in Sources */,
+				2C6DFDC627605006006FA15B /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C6DFDD527605008006FA15B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C6DFDDE27605008006FA15B /* mocosocialTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C6DFDDF27605008006FA15B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C6DFDE827605008006FA15B /* mocosocialUITests.swift in Sources */,
+				2C6DFDEA27605008006FA15B /* mocosocialUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2C6DFDDB27605008006FA15B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2C6DFDBF27605006006FA15B /* mocosocial */;
+			targetProxy = 2C6DFDDA27605008006FA15B /* PBXContainerItemProxy */;
+		};
+		2C6DFDE527605008006FA15B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2C6DFDBF27605006006FA15B /* mocosocial */;
+			targetProxy = 2C6DFDE427605008006FA15B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2C6DFDC927605006006FA15B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C6DFDCA27605006006FA15B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2C6DFDD127605008006FA15B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C6DFDD227605008006FA15B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2C6DFDEB27605008006FA15B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2C6DFDEC27605008006FA15B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2C6DFDEE27605008006FA15B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B73D70A2BB8269FEDD2E71D3 /* Pods-mocosocial.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3Z93N4L3MU;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = mocosocial/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = min.mocosocial;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2C6DFDEF27605008006FA15B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2E6A080629B232D319439C8 /* Pods-mocosocial.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3Z93N4L3MU;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = mocosocial/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = min.mocosocial;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2C6DFDF127605008006FA15B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96384186BB46CFC65B4794A9 /* Pods-mocosocialTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = min.mocosocialTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mocosocial.app/mocosocial";
+			};
+			name = Debug;
+		};
+		2C6DFDF227605008006FA15B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F9E97FDC7A2D2D77F4782B0 /* Pods-mocosocialTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = min.mocosocialTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mocosocial.app/mocosocial";
+			};
+			name = Release;
+		};
+		2C6DFDF427605008006FA15B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 904F46431D1C239A6C437981 /* Pods-mocosocial-mocosocialUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = min.mocosocialUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = mocosocial;
+			};
+			name = Debug;
+		};
+		2C6DFDF527605008006FA15B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A30BED60C41C0C185872C84F /* Pods-mocosocial-mocosocialUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = min.mocosocialUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = mocosocial;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2C6DFDBB27605005006FA15B /* Build configuration list for PBXProject "mocosocial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C6DFDEB27605008006FA15B /* Debug */,
+				2C6DFDEC27605008006FA15B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C6DFDED27605008006FA15B /* Build configuration list for PBXNativeTarget "mocosocial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C6DFDEE27605008006FA15B /* Debug */,
+				2C6DFDEF27605008006FA15B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C6DFDF027605008006FA15B /* Build configuration list for PBXNativeTarget "mocosocialTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C6DFDF127605008006FA15B /* Debug */,
+				2C6DFDF227605008006FA15B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C6DFDF327605008006FA15B /* Build configuration list for PBXNativeTarget "mocosocialUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C6DFDF427605008006FA15B /* Debug */,
+				2C6DFDF527605008006FA15B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2C6DFDCC27605006006FA15B /* mocosocial.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2C6DFDCD27605006006FA15B /* mocosocial.xcdatamodel */,
+			);
+			currentVersion = 2C6DFDCD27605006006FA15B /* mocosocial.xcdatamodel */;
+			path = mocosocial.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 2C6DFDB827605005006FA15B /* Project object */;
+}

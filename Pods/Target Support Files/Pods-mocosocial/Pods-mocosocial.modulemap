@@ -1,0 +1,6 @@
+framework module Pods_mocosocial {
+  umbrella header "Pods-mocosocial-umbrella.h"
+
+  export *
+  module * { export * }
+}
