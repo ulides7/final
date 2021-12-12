@@ -227,7 +227,7 @@
                                     <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="seletedImagePicker:" destination="syf-pm-GXu" eventType="touchUpInside" id="ha9-xA-bh5"/>
+                                    <action selector="selectedImagePicker:" destination="syf-pm-GXu" eventType="touchUpInside" id="cfK-aw-lVN"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yNf-cL-GuM">
@@ -273,9 +273,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="VC9-As-hXJ"/>
                     <connections>
-                        <outlet property="completeSignInBtn" destination="ThK-9h-Fua" id="a7p-31-wol"/>
-                        <outlet property="userImagePicker" destination="yNf-cL-GuM" id="3hu-OD-c0S"/>
-                        <outlet property="usernameField" destination="giU-Fb-v5K" id="eeO-mt-m3Y"/>
+                        <outlet property="completarregistro" destination="ThK-9h-Fua" id="tcX-oA-CGQ"/>
+                        <outlet property="nombredeusuariolbl" destination="giU-Fb-v5K" id="nuo-mT-0uK"/>
+                        <outlet property="userimagen" destination="yNf-cL-GuM" id="MPV-kr-6P2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JtM-F8-2ri" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -5,7 +5,6 @@
 //  Created by Ulises M on 09/12/21.
 //
 
-
 import UIKit
 import Firebase
 import FirebaseDatabase
@@ -13,95 +12,77 @@ import FirebaseStorage
 import SwiftKeychainWrapper
 
 class UsuarioVC: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-@IBOutlet weak var userImagePicker: UIImageView!
     
-    @IBOutlet weak var usernameField: UITextField!
+    @IBOutlet weak var userimagen: UIImageView!
+    @IBOutlet weak var nombredeusuariolbl: UITextField!
+    @IBOutlet weak var completarregistro: UIButton!
     
-    @IBOutlet weak var completeSignInBtn: UIButton!
     
     var userUid: String!
-    
-    var emailField: String!
-    
-    var passwordField: String!
-    
-    var imagePicker : UIImagePickerController!
-    
-    var imageSelected = false
-    
+    var emaillbl: String!
+    var contraseñalbl: String!
+    var imagenelegida: UIImagePickerController!
+    var imagenseleccionada = false
     var username: String!
-
+    
+    
+    
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        imagePicker = UIImagePickerController()
-        
-        imagePicker.delegate = self
-        
-        imagePicker.allowsEditing = true
-    }
-    
-    func keychain(){
-        
-        KeychainWrapper.standard.set(userUid, forKey: "uid")
-    }
 
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+          imagenelegida = UIImagePickerController()
+        imagenelegida.delegate = self
+        imagenelegida.allowsEditing = true
         
-        if let image = info[UIImagePickerController.InfoKey.editedImage.rawValue] as? UIImage {
-            
-            userImagePicker.image = image
-            
-            imageSelected = true
-            
-        } else {
-            
-            print("image wasnt selected")
-        }
-        
-        imagePicker.dismiss(animated: true, completion: nil)
     }
-    
-    func setUpUser(img: String){
-        
-        let userData = [
-            "username": username!,
-            "userImg": img
-        ]
-        
+    func setUpuser(img: String){
+        let userData = ["usuario": username, "imagen de usuario" : img]
         keychain()
-        
         let setLocation = Database.database().reference().child("users").child(userUid)
-        
         setLocation.setValue(userData)
+     
+        
     }
    
+    func keychain(){
+        KeychainWrapper.standard.set(userUid, forKey: "uid")
+    }
     
-    func uploadImg() {
-        
-        if usernameField.text == nil {
-            
-            print("must have username")
-            
-            completeSignInBtn.isEnabled = false
-            
+   
+    
+    func UploadImage() {
+        if nombredeusuariolbl == nil {
+            print("Necesitas un usuario")
+            completarregistro.isEnabled = false
         } else {
-            
-            username = usernameField.text
-            
-            completeSignInBtn.isEnabled = true
+            username = nombredeusuariolbl.text
+            completarregistro.isEnabled = true
         }
-        guard let img = userImagePicker.image, imageSelected == true else {
-            
-            print("image must be selected")
-            
-            return
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        if let imagen = info[UIImagePickerController.InfoKey.editedImage] as? UIImage {
+            userimagen.image = imagen
+            imagenseleccionada = true
+        } else {
+            print("Imagen seleccioanda")
         }
-  
+        imagenelegida.dismiss(animated: true, completion: nil)
+        
+    }
+    
+        
        
         
   
         
+    guard let img = userimagen.image , imagenseleccionada == true else {
+             print("la imagen tiene que seleccionarse")
+            return
+        }
         
         func uploadProfileImage(_ image:UIImage, completion: @escaping ((_ url:URL?)->())) {
             guard let uid = Auth.auth().currentUser?.uid else { return }
@@ -118,7 +99,7 @@ class UsuarioVC: UIViewController, UIImagePickerControllerDelegate, UINavigation
 
                     storageRef.downloadURL { url, error in
                         completion(url)
-                        self.setUpUser(img: url!.absoluteString)
+                        self.setUpuser(img: url!.absoluteString)
                         
                         // success!
                     }
@@ -159,45 +140,35 @@ class UsuarioVC: UIViewController, UIImagePickerControllerDelegate, UINavigation
     }
     
     
+    
     @IBAction func completeAccount(_ sender: Any){
-        
-        Auth.auth().createUser(withEmail: emailField, password: passwordField, completion: { (user,error) in
-            
-            if error != nil {
-                
-                print("cant create user \(error)")
-                
-            } else {
-                
-                if let user = user {
-                    
-                    self.userUid = user.user.uid
-                }
+        Auth.auth().createUser(withEmail: emaillbl, password: contraseñalbl, completion: { (user , error)  in
+                                   if error != nil {
+                                   //    print("No se pudo crear el usuario")
+        } else {
+            if let user = user {
+                self.userUid = user.user.uid
             }
-            
-            self.uploadImg()
+        }
+            self.UploadImage()
         })
+        dismiss(animated: true , completion: nil)
+    }
         
+    @IBAction func selectedImagePicker(_ sender: Any)
+    {
+        present(imagenelegida, animated: true, completion: nil)
+    }
+    
+    @IBAction func cancel(_ sender: AnyObject ) {
         dismiss(animated: true, completion: nil)
     }
     
-    @IBAction func seletedImagePicker(_ sender: Any){
-        
-        present(imagePicker, animated: true, completion: nil)
+    
+    
+    
+    
     }
-    
-    @IBAction func cancel(_ sender: AnyObject){
-        
-        dismiss(animated: true, completion: nil)
-    }
-}
-
-    
-    
-    
-    
-    
-    
     
 
     /*

@@ -42,10 +42,10 @@ class ViewController: UIViewController {
                 destination.userUid = userUid
             }
                 if emaillbl.text != nil {
-                    destination.emailField = emaillbl.text
+                    destination.emaillbl = emaillbl.text
                 }
                 if contraseñalbl.text != nil {
-                    destination.passwordField = contraseñalbl.text
+                    destination.contraseñalbl = contraseñalbl.text
                 }
         }
         }
